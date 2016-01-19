@@ -15,17 +15,12 @@ describe('leapYear', function() {
   it("is true for years divisible by 400", function() {
     expect(leapYear(2000)).to.equal(true);
   });
-
+//if it's zero or negative, alert "needs user to enter a positive integer for the year"
   it("needs user to enter a positive integer for the year", function () {
     expect(leapYear(-2000)).to.equal(false);
   });
-
+//if it's a string, alert "is false for strings"
   it("is false for strings", function() {
     expect(leapYear("")).to.equal(false);
   });
 });
-
-//if it's a string, return ""enter a year as an integer > 0""
-
-
-//if it's zero or negative, return "enter a year as an integer > 0"
