@@ -19,6 +19,10 @@ describe('leapYear', function() {
   it("needs user to enter a positive integer for the year", function () {
     expect(leapYear(-2000)).to.equal(false);
   });
+
+  it("is false for strings", function() {
+    expect(leapYear("")).to.equal(false);
+  });
 });
 
 //if it's a string, return ""enter a year as an integer > 0""
